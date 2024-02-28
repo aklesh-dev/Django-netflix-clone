@@ -147,7 +147,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # MEDIA_ROOT =  BASE_DIR / "media"
 
-CSRF_TRUSTED_ORIGINS =  ['https://localhost:8000'] #  add your domain here if you are not using localhost
+CSRF_TRUSTED_ORIGINS =  ['*'] #  add your domain here if you are not using localhost (https://localhost:8000)
 CSRF_COOKIE_SECURE = True 
 SESSION_COOKIE_SECURE  = True  
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARD_PROTO', 'https')
